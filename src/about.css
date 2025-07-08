@@ -66,11 +66,19 @@ header h1 {
 }
 
 .about-container {
-    padding: 3rem 1.5rem;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  gap: 1.5rem;             
+  padding: 2rem;
 }
+
+.about-image {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+}
+
 
 .about-box {
     max-width: 800px;
