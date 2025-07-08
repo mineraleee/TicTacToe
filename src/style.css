@@ -49,11 +49,21 @@ h1 {
   margin: 0;
 }
 
-.menu-box a p:hover {
+.menu-box a p:hover{
   background-color: #fff;
   color: #FF9D23;
   cursor: pointer;
 }
+
+.menu-box a.active {
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.menu-box a.active p {
+  color: #FF9D23;
+}
+
 
 .game-container {
   display: flex;

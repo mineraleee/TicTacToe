@@ -56,6 +56,15 @@ header h1 {
   cursor: pointer;
 }
 
+.menu-box a.active {
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.menu-box a.active p {
+  color: #FF9D23;
+}
+
 .about-container {
     padding: 3rem 1.5rem;
     display: flex;
