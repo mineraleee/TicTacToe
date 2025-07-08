@@ -1,0 +1,160 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #9c3d00; 
+    color: #fff;
+    min-height: 100vh;
+}
+
+header {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #b34400;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 0.4rem;
+}
+
+.flex-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu-box {
+    display: flex;
+    gap: 2rem;
+    padding: 0.8rem 2rem;
+    background-color: #FF9D23;
+    border-radius: 12px;
+}
+
+.menu-box a {
+    text-decoration: none;
+}
+
+.menu-box p {
+    padding: 0.3rem 1rem;
+    color: #fff;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-box p:hover {
+  background-color: #fff;
+  color: #FF9D23;
+  cursor: pointer;
+}
+
+.about-container {
+    padding: 3rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1rem;
+}
+
+.about-box {
+    max-width: 800px;
+    background-color: #f7931e;
+    padding: 2rem;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.about-box h2 {
+    margin-bottom: 1rem;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.about-box p,
+.about-box ul {
+    background-color: transparent;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.about-box li {
+    margin-bottom: 0.7rem;
+}
+
+.about-box strong {
+    background-color: transparent;
+    padding: 0 4px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.developer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-container {
+    padding: 2rem 1rem;
+  }
+
+  .about-box {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .about-box h2 {
+    font-size: 1.25rem;
+  }
+
+  .developer {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .menu-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .about-container {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .about-box {
+    padding: 1rem;
+    border-radius: 16px;
+    font-size: 0.9rem;
+  }
+
+  .about-box h2 {
+    font-size: 1.1rem;
+  }
+
+  .about-box ul {
+    padding-left: 1rem;
+  }
+
+  .developer {
+    font-size: 10px;
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
