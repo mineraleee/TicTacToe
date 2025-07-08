@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8"/>
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>TIC TAC TOE</h1>
+            <nav class="flex-container">
+                <section class="menu-box">
+                <a href="main.html"><p>Play</p></a>
+                <a href="about.html"><p>About Game</p></a>
+                </section>
+            </nav>
+        </header>
+        <main class="game-container">
+            <section class="player-section">
+                <aside class="player-info">
+                <figure class="avatar">
+                    <img src="../doc/player1.png"/>
+                </figure>
+                <p class="label">Player 1</p>
+                <p class="symbol-container">X</p>
+                </aside>
+                <p class="wins">Win Rounds: 0</p>
+            </section>
+            <section class="board">
+                <article class="cell"></article>
+                <article class="cell"></article>
+                <article class="cell"></article>
+                <article class="cell"></article>
+                <article class="cell"></article>
+                <article class="cell"></article>
+                <article class="cell"></article>
+                <article class="cell"></article>
+                <article class="cell"></article>
+            </section>
+            <section class="player-section">
+                <aside class="player-info">
+                <figure class="avatar">
+                    <img src="../doc/player2.png"/>
+                </figure>
+                <p class="label">Player 2</p>
+                <p class="symbol-container">O</p>
+                </aside>
+                <p class="wins">Win Rounds: 0</p>
+            </section>
+            </main>
+            <footer class="new">
+                <p class="new-game">New Game</p>
+            </footer>
+            <section id="playerModal" class="modal">
+                <article class="modal-content">
+                    <h2>Pilih Pemain yang Mulai</h2>
+                    <button id="startX">Player 1 (X)</button>
+                    <button id="startO">Player 2 (O)</button>
+                </article>
+            </section>
+            <section id="winModal" class="modal">
+                <article class="modal-win">
+                    <h2 id="winText">Selamat, X menang</h2>
+                </article>
+            </section>
+    </body>
+</html>
