@@ -1,0 +1,326 @@
+*{
+    margin:0 ;
+    box-sizing: border-box;
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  background-color: #9c3d00;
+}
+
+header {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #b34400;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 0.4rem;
+}
+
+.flex-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.menu-box {
+  display: flex;
+  gap: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: #FF9D23;
+  border-radius: 12px;
+}
+
+.menu-box a {
+  text-decoration: none;
+}
+
+.menu-box a p {
+  padding: 0.3rem 1rem;
+  color: #fff;
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+}
+
+.menu-box a p:hover {
+  background-color: #fff;
+  color: #FF9D23;
+  cursor: pointer;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 1.5rem;
+}
+
+.player-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FF9D23;
+  border-radius: 2rem;
+  width: 170px;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -40px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.label {
+  font-weight: bold;
+  margin: 1rem 0.5rem 1rem;
+  color: white;
+  background-color: transparent;
+}
+
+.symbol-container {
+  background-color: #FFF6D5;
+  color: #FF9D23;
+  font-size: 1.25rem;
+  border-radius: 2rem;
+  padding: 0.2rem 3.5rem;
+  font-weight: bold;
+}
+
+.wins {
+  background-color: #FFF6D5;
+  color: #FF9D23;
+  border: 3px solid #FF9D23;
+  border-radius: 2rem;
+  padding: 0.4rem 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 20px;
+  background-color: #FFF6D5;
+  padding: 30px;
+  border-radius: 1rem;
+  justify-content: center;
+}
+
+.cell {
+  width: 150px;
+  height: 150px;
+  background-color: #B34400;
+  border-radius: 12px;
+  color:#FFF;
+  font-size:4rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new{
+  background-color: transparent;
+  justify-content: center;
+  display: flex;
+  padding: 1rem;
+}
+
+.new-game{
+  background-color: #FF9D23;
+  color:#FFF;
+  font-weight:bold;
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+}
+
+.new-game:hover {
+  background-color: #f88b05  !important;
+  cursor: pointer;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #FFF6D5;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.modal-win {
+  background-color: #FFF6D5;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.modal-content button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #FF9D23;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+h2{
+  background-color: transparent;
+  padding-bottom: 1rem;
+}
+
+#winText{
+  padding-bottom: 0;
+}
+
+.cell:hover {
+  background-color: #FF9D23  !important;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.2s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .game-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .board {
+    grid-template-columns: repeat(3, 100px);
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .cell {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+  }
+
+  .player-section{
+    padding-top: 2rem;
+  }
+
+  .player-info {
+    width: 140px;
+  }
+
+  .symbol-container {
+    padding: 0.2rem 2rem;
+    font-size: 1rem;
+  }
+
+  .wins {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .menu-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .game-container {
+    gap: 1.5rem;
+  }
+
+  .board {
+    grid-template-columns: repeat(3, 80px);
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .cell {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+  }
+
+  .player-info {
+    width: 120px;
+    padding-bottom: 0.8rem;
+    padding-top: 1rem;
+  }
+
+  .symbol-container {
+    padding: 0.2rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .wins {
+    font-size: 0.8rem;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .new-game {
+    padding: 0.4rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .modal-content,
+  .modal-win {
+    width: 80%;
+    padding: 1.5rem;
+  }
+
+  .modal-content button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
