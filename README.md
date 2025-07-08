@@ -56,7 +56,7 @@ TicTacToe
     <td align="center">
       <a href="https://github.com/mineraleee">
         <img src="https://avatars.githubusercontent.com/mineraleee" width="80" style="border-radius: 50%;" /><br />
-        <span><b>Heleni Gratia</br> 13523107</b></span>
+        <span><b>Heleni Gratia</b></span>
       </a>
     </td>
   </tr>
