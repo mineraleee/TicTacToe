@@ -27,7 +27,7 @@ TicTacToe
 |   │   └── about.png 
 │   ├── about.css               # CSS file for styling the About page
 │   ├── about.html              # About page with information about the game
-│   ├── main.html               # Main game page where the Tic-Tac-Toe is played
+│   ├── index.html               # Main game page where the Tic-Tac-Toe is played
 │   ├── script.js               # JavaScript file containing the game logic
 │   └── style.css               # Main CSS file for styling the game interface
 └── README.md                  # Main documentation file with a project overview, how to run, and other details
@@ -49,7 +49,7 @@ TicTacToe
    ```
 4. No additional setup or installation is required, just open the main.html file in your browser to start playing:
    ```
-    main.html
+    index.html
    ```
 
 ## Author
