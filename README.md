@@ -18,11 +18,13 @@ This is a simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript, designe
 ## Project Structure
 ```
 TicTacToe
-├── doc/                        # Folder for storing image assets used in the game
-│   ├── player1.png
-│   ├── player2.png
+├── doc/                        # Folder for storing image used in README
 │   └── tictactoe.png             
-├── src/                        # Main folder containing the source code of the application
+├── src/                        # Main folder containing the source code of the application   
+│   ├── assets
+|   │   ├── player1.png
+|   │   ├── player2.png
+|   │   └── about.png 
 │   ├── about.css               # CSS file for styling the About page
 │   ├── about.html              # About page with information about the game
 │   ├── main.html               # Main game page where the Tic-Tac-Toe is played
